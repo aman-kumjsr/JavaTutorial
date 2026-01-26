@@ -22,11 +22,15 @@ class Student { // class name by convention is written with Captial first letter
         System.out.println(this.name);
         System.out.println(age);
     }
+    // Constructor - In java constructor works is to construct Java Objects - Constructor name of a
+    // any Class will be the same name as Class.
+
     // Constructor can be make by three types 1. Non-parameterised, 2. Parameterised 3. 
     
-    // 1. Non - Parameterised Constructor
+    // 1. Non - Parameterised Constructor - If no constructor is initialsed then java by default
+    //  creates one non - parameterised constructor.
     
-    // Student(){
+    // Student(){  // constructor called - Student() is constructor name same as Class name.
     //     System.out.println("Non-Parameterside constructor called");
     // }
 
