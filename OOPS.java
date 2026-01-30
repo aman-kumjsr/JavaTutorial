@@ -35,9 +35,23 @@ class Student { // class name by convention is written with Captial first letter
     // }
 
     // 2. Parameterised Constructor 
-    // 
-}
+    Student(String name, int age){
+        System.out.print("Parameterised Constructor called");
+        this.name = name;
+        this.age = age;
+    }
 
+    // 3. Copy Constructor
+    //  A copy constructor in Java is a constructor that creates a new object by copying the 
+    //  field values of an existing object of the same class. Unlike languages like C++, Java
+    //  does not have a built-in, default copy constructor; you must define it manually. 
+    Student(Student s2){
+        this.name = s2.name;
+        this.age = s2.age;
+    }
+
+
+}
 public class OOPS {
     public static void main(String args[]) {
         // Pen pen1 = new Pen();
@@ -54,15 +68,21 @@ public class OOPS {
         // pen2.write();
         // pen2.printColor();
 
-        Student student1 = new Student();
-        student1.name = "Aman Kumar";
-        student1.age = 22;
+        // Student student1 = new Student();
+        // student1.name = "Aman Kumar";
+        // student1.age = 22;
 
-        Student student2 = new Student();
-        student2.name = "Rajan Rana";
-        student2.age = 30;
+        // Student student2 = new Student();
+        // student2.name = "Rajan Rana";
+        // student2.age = 30;
 
-        student1.printInfo();
-        student2.printInfo();
+        // student1.printInfo();
+        // student2.printInfo();
+
+        // Parameterised constructor - object name = s1
+        Student s1 = new Student("aman", 24);
+        s1.printInfo();
+
+        
     }
 }
